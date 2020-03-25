@@ -1,4 +1,7 @@
-﻿using System;
+
+/*SON DEĞİŞİKLİKLER: Artık ilk iki çekirdek metric(CAT,CMT) classified variable ve classified methodların olduğu iki tane 
+list döndürüyor. Bu listleri üçüncü metricde kullanacağız. */
+using System;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Collections.Generic;
 using System.Text;

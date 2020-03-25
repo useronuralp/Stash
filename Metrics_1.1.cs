@@ -1,4 +1,5 @@
-﻿using System;
+// SON DEĞİŞİKLİKLER: İkinci metric eklendi.
+using System;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Collections.Generic;
 using System.Text;

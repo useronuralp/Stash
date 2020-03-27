@@ -1,4 +1,5 @@
-﻿using System;
+//DEĞİŞİKLİKLER: CCT(3. metric) eklendi ve böylelikle çekirdek metricler tamamlanmış oldu.
+using System;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Collections.Generic;
 using System.Text;

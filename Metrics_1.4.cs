@@ -1,4 +1,5 @@
-﻿using System;
+//DEĞİŞİKLİKLER: 10. metric CAIW eklendi.
+using System;
 using Microsoft.CodeAnalysis.CSharp;
 using System.Collections.Generic;
 using System.Text;

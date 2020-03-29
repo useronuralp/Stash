@@ -173,7 +173,19 @@ namespace ConsoleApp1
 
 
             double result = 0.0;
-            result = interact_set_ct / total_mutator_number;
+           
+            try
+            {
+                result = interact_set_ct / total_mutator_number;
+
+            }
+            catch (ArithmeticException e)
+            {
+                Console.WriteLine("Division by zero not possible");
+                result = interact_set_ct / (total_mutator_number+0.001);
+
+            }
+           
             return (float)result;
         }
     }

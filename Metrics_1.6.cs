@@ -222,7 +222,17 @@ namespace ConsoleApp1
 
 
             double result=0.0;
-            result = interact_get_ct / total_accessor_number;
+            try{
+
+                result = interact_get_ct / total_accessor_number;
+            }
+            catch (ArithmeticException e)
+            {
+                Console.WriteLine("Division by zero not possible");
+                result = interact_get_ct / (total_accessor_number+0.001);
+            }
+
+
             return (double)result;
         }
     }

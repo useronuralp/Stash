@@ -40,7 +40,10 @@ namespace Hangman
  	    
 
             private int myPropertyVar; //classified
-	    public int getValue(){ return 0;}
+	    public void getSomeValue()
+	    {
+	        Console.Writeline("some value");
+	    }
 					
             public int MyProperty
             {

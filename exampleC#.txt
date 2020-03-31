@@ -3,30 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Reflection;
- 
 namespace Hangman
 {
     class Program
     {   
-        public class MyClass
+        public class myClass
         {
-            public string myField = string.Empty; //Classified
-
+            string[] hello; //Classified
+            int merhaba = 12; //classified 
             public int myValue = 2; //Classified
-
             public MyClass()
             {
             }
-
             public void MyMethod(int parameter1, string parameter2)
             {   
-                myField = "Onuralp";
+                var myField = "Onuralp";
                 Console.WriteLine("First Parameter {0}, second parameter {1}", 
                                                             parameter1, parameter2);
                 myValue = 2/2;
                 myValue++;
             }
-
             public void MyMethod_2(int parameter3, string parameter4)
             {   
                 myValue = 2;
@@ -34,31 +30,33 @@ namespace Hangman
                                                             parameter3, parameter4);
                 myValue++;
             }
-
             public int MyAutoImplementedProperty { get; set; }
-	   
- 	    
-
             private int myPropertyVar; //classified
-	    public void getSomeValue()
-	    {
+	        public void getSomeValue()
+	        {
 	        Console.Writeline("some value");
-	    }
-					
+	        }
             public int MyProperty
             {
                     get { return myPropertyVar; }
                     set { myPropertyVar = value; }
             }
-	    public int getMyValue
-	    {
-		get { return myValue; }
+	        public int getMyValue
+	        {
+		        get { return myValue; }
                 set { myValue = value; }
-	    } 
+	        } 
         }
-        static void Main(string[] args)
+
+        public class MyClass_2 
         {
- 
+            public int MyValue_2 = 9; //classified 
+            var hola; //Classified
+        }
+
+
+        static void Main(string[] args){
+
             Console.WriteLine("Welcome to Hangman!!!!!!!!!!");
             string[] listwords = new string[10];
             listwords[0] = "sheep";
@@ -71,6 +69,7 @@ namespace Hangman
             listwords[7] = "pineapple";
             listwords[8] = "orange";
             listwords[9] = "mango";
+            myClass.merhaba = 19;
             Random randGen = new Random();
             var idx = randGen.Next(0, 9);
             string mysteryWord = listwords[idx];
@@ -92,8 +91,10 @@ namespace Hangman
                 Console.WriteLine(guess);
             }
             p = 5;
-	    
             j = 8;
+            j += 1;
+            ++p;
+            p++;
         }
     }
 }

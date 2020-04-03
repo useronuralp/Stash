@@ -7,7 +7,11 @@ namespace Hangman
 {
     
     class Program
-    {   
+    {
+        public class Parent { int oasdk = 653; //classified}
+        public class Devrim { int c = 6; //classified}
+        public class Child1 : Parent { }
+        public class Child1 : Devrim { }
         [Serializable]
 	    public abstract class Component
 	    {
@@ -15,6 +19,12 @@ namespace Hangman
 		    abstract public void Traverse();
 		    int ok = 3; //classified
 	    }
+        [Serializable]
+        public class PlaceOrder
+        {
+            public Guid Id { get; set; }
+            int okasdasd = 356; //classified
+        }
 	    [Serializable]
 	    public class ShoppingCartItem
 	    {

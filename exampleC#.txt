@@ -5,13 +5,15 @@ using System.Text;
 using System.Reflection;
 namespace Hangman
 {
-    
     class Program
     {
         public class Parent { int oasdk = 653; //classified}
-        public class Devrim { int c = 6; //classified}
+        public class Devrim { int col = 6; //classified}
+         public class Onur { int colam = 64; //classified}
+
         public class Child1 : Parent { }
-        public class Child1 : Devrim { }
+        public class Child2 : Devrim { }
+        public class Child3 : Onur {int colsswem = 234; //classified }
         [Serializable]
 	    public abstract class Component
 	    {
@@ -31,7 +33,7 @@ namespace Hangman
    		    public string Name { get; set; }
    		    public int Quantity { get; set; }
    		    public decimal ListPrice { get; set; }
-		    double onur=2.0;//Classified  
+		    double onur = 2.0;//Classified  
 	    }
         [Serializable]
         public class myClass
@@ -74,16 +76,12 @@ namespace Hangman
                 set { myValue = value; }
 	        } 
         }
-
         public class MyClass_2 
         {
             public int MyValue_2 = 9; //classified
             var hola; //Classified
         }
-
-
         static void Main(string[] args){
-
             Console.WriteLine("Welcome to Hangman!!!!!!!!!!");
             string[] listwords = new string[10];
             listwords[0] = "sheep";

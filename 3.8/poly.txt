@@ -1,0 +1,70 @@
+Live Demo
+using System;
+
+namespace PolymorphismApplication {
+   class Shape {
+      
+      protected int width; //classified 
+      public int height; //classified
+      int az, bz, cz, dz; //classified
+      
+      public Shape( int a = 0, int b = 0) {
+         width = a;
+         height = b;
+      }
+      public virtual int area() {
+         Console.WriteLine("Parent class area :");
+         return 0;
+      }
+   }
+   class Rectangle : Shape{
+      public Rectangle( int a = 0, int b = 0): base(a, b) {
+
+      }
+      public static void Calculate2() {
+            
+      } 
+      public override int area () {
+         Console.WriteLine("Rectangle class area :");
+         return (width * height); 
+      }
+   }
+   class Triangle: Shape {
+      public Triangle(int a = 0, int b = 0): base(a, b) {
+      }
+      public static void Calcualte() {
+            
+      } 
+      public override int area() {
+         Console.WriteLine("Triangle class area :");
+         return (width * height / 2); 
+      }
+   }
+   class Caller {
+      public void CallArea(Shape sh) {
+         int aloo; //classified
+         a = sh.area();
+         Console.WriteLine("Area: {0}", a);
+      }
+   }  
+   class Tester {
+      static void Main(string[] args) {
+         int devrim, onuralp; //classified
+         Caller c = new Caller();
+         Rectangle r = new Rectangle(10, 7);
+         Triangle t = new Triangle(10, 5);
+         if(devrim==12)
+         { 
+            devrim=2;
+         }
+         else
+         {
+            devrim=4;
+         }
+         
+         c.CallArea(r);
+         c.CallArea(t);
+         Console.ReadKey();
+      }
+   }
+}

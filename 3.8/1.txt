@@ -1,0 +1,51 @@
+  
+class Animal  // Base class (parent) 
+{   
+  int selammm; //classified
+  private virtual void animalSound() 
+  {
+    Console.WriteLine("The animal makes a sound");
+    int merhabaaaa; //classified
+    
+  }
+}
+
+class Pig : Animal  // Derived class (child) 
+{
+  int abov; //classified
+  int b;
+  public void animalSound() 
+  {
+    Console.WriteLine("The pig says: wee wee");
+    abov = 12;
+  }
+}
+
+class Frog: Animal
+{
+      
+}
+
+class Dog : Animal  // Derived class (child) 
+{
+  public override void animalSound2() 
+  {
+    Console.WriteLine("The dog says: bow wow");
+    
+  }
+}
+
+class Program 
+{
+  static void Main(string[] args) 
+  {
+    Animal myAnimal = new Animal();  // Create a Animal object
+    Animal myPig = new Pig();  // Create a Pig object
+    Animal myDog = new Dog();  // Create a Dog object
+
+    int devrim; //Classified
+    myAnimal.animalSound();
+    myPig.animalSound();
+    myDog.animalSound();
+  }
+}
